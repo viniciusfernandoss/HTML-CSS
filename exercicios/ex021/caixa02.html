@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: brown;
+            color: white;
+            padding: 15px;
+        }
+        header > nav {
+            box-shadow: 5px 5px 5px black;
+            background-color: crimson;
+            padding: 8px;
+        }
+        header > nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 90px;
+            
+        }
+        header > nav > a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        main {
+            background-color: black;
+            padding: 10px;
+        }
+        main > section {
+            border-radius: 20px;
+            margin: 10px;
+            padding: 5px;
+            background-color: rgb(0, 128, 255);
+        }
+        main > section > #not {
+            text-align: center;
+        }
+        main > #geek {
+            padding: 3px 10px 15px 15px;
+        }
+        main > #geek > article {
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: darkgray;
+            padding: 10px;
+            text-align: center;
+        }
+        footer > p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site Homem-Aranha</h1>
+        <nav>
+            <a href="#">Navegação 1</a>
+            <a href="#">Navegação 2</a>
+            <a href="#">Navegação 3</a>
+            <a href="#">Navegação 4</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="not">
+                <h4>Noticias</h4>
+            </article>
+        </section>
+        <section id="geek">
+            <article>
+                <h2>Noticias do Donde Verde</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit soluta, accusamus recusandae laborum illo natus inventore nulla officiis reprehenderit enim corporis, doloribus eligendi quod sint? Id non voluptas dolorum ad?</p>
+                <aside>Escrito por Vinicius</aside>
+            </article>
+
+            <article>
+                <h2>Noticia do Homem Aranha</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ab possimus, odio distinctio quos rerum facere, incidunt nostrum repellendus veritatis, ducimus voluptate dolorem ipsam. Voluptatum, repellendus mollitia! Dolor, quidem error?</p>
+                <aside>Escrito por Anna</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vinicius</p>
+    </footer>
+</body>
+</html>
