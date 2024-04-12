@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'titulo';
+    src: url('fonts/GoogleFonts-PassionOne-Regular.ttf') 
+    format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'paragrafo';
+    src: url('fonts/GoogleFonts-Sriracha-Regular.ttf') 
+    format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fonteTitulo: 'titulo', Arial, sans-serif;
+    --fonteParagrafo: 'paragrafo', Arial, sans-serif;
+    --fontePadrao: Verdana, Tahoma, sans-serif;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: var(--fontePadrao);
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fonteTitulo);
+    padding-top: 50px;
+    font-size: 10vw;
+    letter-spacing: 2px;
+}
+header > p {
+    padding-bottom: 50px;
+}
+header > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+}
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    font-family: var(--fonteParagrafo);
+}
+main p {
+    padding-left: 15px;
+    
+}
+main section {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    
+}
+main > #img1 {
+    height: 100%;
+    width: 100%;
+    background: black url('img/background001.jpg') center center  no-repeat scroll;
+    background-size: cover;
+    color: white;
+}
+main > #img2 {
+    height: 100%;
+    width: 100%;
+    background: black url('img/background002.jpg') center center  no-repeat scroll;
+    background-size: cover;
+    color: white;
+}
+main > #img1 > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+main > #img2 > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
