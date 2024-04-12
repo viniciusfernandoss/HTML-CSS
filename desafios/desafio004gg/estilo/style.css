@@ -1,13 +1,34 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'titulo';
+    src: url('../fonts/GoogleFonts-PassionOne-Regular.ttf') 
+    format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'paragrafo';
+    src: url('../fonts/GoogleFonts-Sriracha-Regular.ttf') 
+    format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: 'titulo', Arial, sans-serif;
+    --fonte3: 'paragrafo', Arial, sans-serif;   
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -18,6 +39,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -36,6 +59,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 section.normal {
     background-color: white;
@@ -46,8 +71,9 @@ section.imagem {
     color: white;
 
 }
-select.imagem > p {
-    width: 400px;
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.349);
 }
 
